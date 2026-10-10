@@ -1,0 +1,6 @@
+*{
+    background-color: gray;
+}
+#hero-carousel,.carousel-inner,.carousel-item{
+    height: 50%;
+}
