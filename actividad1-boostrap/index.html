@@ -98,7 +98,6 @@
     </div>
 
     <!-- RF 2 -- seccion de HERO -->
-
     <section class="hero-section">
       <div class="container my-3 text-center">
         <h2 class="fw-bold">LO MEJOR DE HOY</h2>
@@ -106,52 +105,98 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col px-0">
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <h1 class="titulo-carrusel-hero">
-                    Las preferidas por CRISTIANO RONALDO
-                  </h1>
-                  <a class="btn-accion-hero" href="#" role="button"
-                    >QUIERO LAS MIAS</a
-                  >
                   <img
                     src="./imagen/cristiano.jpg"
-                    class="d-block mx-auto w-100"
+                    class="d-block w-100"
                     alt="..."
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carrusel-hero text-dark">
+                      Las preferidas por CRISTIANO RONALDO
+                    </h5>
+                    <a class="btn-accion-hero text-dark" href="#" role="button"
+                      >QUIERO LAS MIAS</a
+                    >
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <h1 class="titulo-carrusel-hero">
-                    Los mejores lebron que podras encontrar
-                  </h1>
-                  <a class="btn-accion-hero" href="#" role="button"
-                    >CONSIGUE LAS TUYAS AHORA</a
-                  >
                   <img
                     src="./imagen/zapato-lebron.webp"
-                    class="d-block mx-auto w-100"
+                    class="d-block w-100"
                     alt="..."
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carrusel-hero text-dark">
+                      Los mejores lebron que podras encontrar
+                    </h5>
+                    <a class="btn-accion-hero text-dark" href="#" role="button"
+                      >CONSIGUE LAS TUYAS AHORA</a
+                    >
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <h1 class="titulo-carrusel-hero">
-                    Estos zapatos son buenos para trotar mas de 500km
-                  </h1>
-                  <a class="btn-accion-hero" href="#" role="button"
-                    >COMPRALAS AHORA</a
-                  >
                   <img
                     src="./imagen/zapatos.jpg"
-                    class="d-block mx-auto w-100"
+                    class="d-block w-100"
                     alt="..."
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carrusel-hero text-dark">
+                      Estos zapatos son buenos para trotar mas de 500km
+                    </h5>
+                    <a class="btn-accion-hero text-dark" href="#" role="button"
+                      >COMPRALAS AHORA</a
+                    >
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
                 </div>
               </div>
               <button
                 class="carousel-control-prev"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev"
               >
                 <span
@@ -163,7 +208,7 @@
               <button
                 class="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next"
               >
                 <span
@@ -177,6 +222,7 @@
         </div>
       </div>
     </section>
+
     <!-- RF 2 -- fin -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
