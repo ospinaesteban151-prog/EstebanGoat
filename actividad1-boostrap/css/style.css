@@ -41,3 +41,70 @@ span {
   background-color: rgba(0, 0, 0, 0.55);
   border-radius: 0.5rem;
 }
+
+.categorias-section {
+  background-color: #f5f6f8;
+}
+
+.categorias-eyebrow {
+  color: #e63946;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.categoria-card {
+  min-height: 145px;
+  height: 100%;
+  padding: 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #e6e8eb;
+  border-radius: 0.75rem;
+  transition: transform 160ms ease, box-shadow 160ms ease, color 160ms ease;
+}
+
+.categoria-card i {
+  color: #e63946;
+  font-size: 2rem;
+}
+
+.categoria-card span {
+  background: none;
+  font-weight: 600;
+}
+
+.categoria-card:hover,
+.categoria-card:focus-visible {
+  color: #001862;
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.25rem rgba(33, 37, 41, 0.12);
+}
+
+.categoria-ofertas {
+  color: #fff;
+  background-color: #e63946;
+  border-color: #e63946;
+}
+
+.categoria-ofertas i {
+  color: #fff;
+}
+
+.categoria-ofertas:hover,
+.categoria-ofertas:focus-visible {
+  color: #fff;
+  background-color: #33ff00;
+}
+
+.center,p{
+ font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+}
