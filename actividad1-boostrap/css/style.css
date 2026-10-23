@@ -98,10 +98,36 @@ span {
   color: #fff;
 }
 
+.btn-solid.btn-styled.theme-primary {
+  padding: 0.55rem 1.25rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #ff0202;
+  border: 1px solid #ff0661;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(239, 60, 60, 0.854);
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+
+.btn-solid.btn-styled.theme-primary:hover {
+  background-color: #000000;
+  border-color: #8b8b8b;
+  box-shadow: 0 6px 14px rgba(187, 177, 177, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-solid.btn-styled.theme-primary:focus-visible {
+  outline: 3px solid rgba(230, 57, 70, 0.35);
+  outline-offset: 3px;
+}
+
 .categoria-ofertas:hover,
 .categoria-ofertas:focus-visible {
-  color: #fff;
-  background-color: #33ff00;
+  color: #000000;
+  background-color: #77f500;
 }
 
 .center,p{
