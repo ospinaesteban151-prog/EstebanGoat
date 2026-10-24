@@ -134,3 +134,55 @@ span {
  font-family: 'Times New Roman', Times, serif;
   align-items: center;
 }
+.badge.theme-primary-estado-nuevo{
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #01a6ff;
+  border: 1px solid #003066;
+  border-radius: 999px;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+.badge.theme-primary-estado-oferta{
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #DC2626;
+  border: 1px solid #ff0a0a;
+  border-radius: 999px;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+.badge.theme-primary-estado-destacado{
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #EAB308;
+  border: 1px solid #ffc60a;
+  border-radius: 999px;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+.badge.theme-primary-estado-pocasUnidades{
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #ff6a1b;
+  border: 1px solid #EA580C;
+  border-radius: 999px;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
