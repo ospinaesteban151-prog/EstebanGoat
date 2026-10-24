@@ -128,6 +128,7 @@ span {
 .categoria-ofertas:focus-visible {
   color: #000000;
   background-color: #77f500;
+  border-color: #00ff59;
 }
 
 .center,p{
@@ -180,6 +181,38 @@ span {
   font-weight: 700;
   background-color: #ff6a1b;
   border: 1px solid #EA580C;
+  border-radius: 999px;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+.promo{
+  color: #8b8b8b;
+  align-items: left;
+}
+
+.botonComprar{
+  padding: 0.2rem 0.7rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #fd0000;
+  border: 1px solid #ff2701;
+  border-radius: 999px;
+  text-decoration: none;
+  /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+.badge.theme-primary-estado-imperdible{
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: #0029cd;
+  border: 1px solid #0080ff;
   border-radius: 999px;
   /* box-shadow: 0 4px 10px rgba(0, 89, 255, 0.854); */
   
