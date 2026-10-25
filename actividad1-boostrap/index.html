@@ -1,917 +1,1357 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportZone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/icons" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SportZone</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://fonts.google.com/icons" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./imagen/logo.jpeg" alt="" width="150px" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-house"></i>
-                  Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-shop-window"></i>
-                  Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-tag"></i>
-                  Categorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-percent"></i>
-                  Promociones</a>
-                <!-- SIX SEVEN -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-envelope"></i>
-                  Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-cart3"></i>
-                  Opciones de carrito
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-file-text"></i>
-                  Condiciones
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-  <!-- RF 2 -- seccion de HERO -->
-  <section class="hero-section">
-    <div class="container my-3 text-center">
-      <h2 class="fw-bold">LO MEJOR DE HOY</h2>
-    </div>
+  <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col px-0">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./imagen/cristiano.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5 class="negrilla titulo-carrusel-hero">
-                    Las preferidas por CRISTIANO RONALDO
-                  </h5>
-                  <a class="negrilla btn-accion-hero" href="#" role="button">QUIERO LAS MIAS</a>
-                  <button type="button" class="btn btn-secondary">
-                    Ver Productos
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    Conocer Promociones
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./imagen/zapato-lebron.webp" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5 class="negrilla titulo-carrusel-hero">
-                    Los mejores lebron que podras encontrar
-                  </h5>
-                  <a class="negrilla btn-accion-hero" href="#" role="button">
-                    CONSIGUE LAS TUYAS AHORA
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./imagen/logo.jpeg" alt="" width="150px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-house"></i>
+                    Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-shop-window"></i>
+                    Productos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-tag"></i>
+                    Categorias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-percent"></i>
+                    Promociones</a
+                  >
+                  <!-- SIX SEVEN -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-envelope"></i>
+                    Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-cart3"></i>
+                    Opciones de carrito
                   </a>
-                  <button type="button" class="btn btn-secondary">
-                    Ver Productos
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    Conocer Promociones
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./imagen/zapatos.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5 class="negrilla titulo-carrusel-hero">
-                    Estos zapatos son buenos para trotar mas de 500km
-                  </h5>
-                  <a class="negrilla btn-accion-hero" href="#" role="button">COMPRALAS AHORA</a>
-                  <button type="button" class="btn btn-secondary">
-                    Ver Productos
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    Conocer Promociones
-                  </button>
-                </div>
-              </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-file-text"></i>
+                    Condiciones
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- RF 2 -- seccion de HERO -->
+    <section class="hero-section">
+      <div class="container my-3 text-center">
+        <h2 class="fw-bold">LO MEJOR DE HOY</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col px-0">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./imagen/cristiano.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5 class="negrilla titulo-carrusel-hero">
+                      Las preferidas por CRISTIANO RONALDO
+                    </h5>
+                    <a class="negrilla btn-accion-hero" href="#" role="button"
+                      >QUIERO LAS MIAS</a
+                    >
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./imagen/zapato-lebron.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5 class="negrilla titulo-carrusel-hero">
+                      Los mejores lebron que podras encontrar
+                    </h5>
+                    <a class="negrilla btn-accion-hero" href="#" role="button">
+                      CONSIGUE LAS TUYAS AHORA
+                    </a>
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./imagen/zapatos.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5 class="negrilla titulo-carrusel-hero">
+                      Estos zapatos son buenos para trotar mas de 500km
+                    </h5>
+                    <a class="negrilla btn-accion-hero" href="#" role="button"
+                      >COMPRALAS AHORA</a
+                    >
+                    <button type="button" class="btn btn-secondary">
+                      Ver Productos
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Conocer Promociones
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- RF 2 -- fin -->
+    <!-- RF 2 -- fin -->
 
-  <!-- Seccion de Categorias -->
-  <section class="categorias-section py-5" id="categorias">
-    <div class="container">
-      <div class="text-center mb-4">
-        <p class="categorias-eyebrow mb-1">ENCUENTRA LO QUE BUSCAS</p>
-        <h2 class="fw-bold mb-0">Compra por categoría</h2>
-      </div>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <i class="fa-solid fa-socks"></i>
-            <span>Calzado</span>
-            <div class="center">
-              <p>Tenis y zapatillas...</p>
-            </div>
-            <button class="btn-solid btn-styled theme-primary">Ver</button>
-          </a>
+    <!-- Seccion de Categorias -->
+    <section class="categorias-section py-5" id="categorias">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="categorias-eyebrow mb-1">ENCUENTRA LO QUE BUSCAS</p>
+          <h2 class="fw-bold mb-0">Compra por categoría</h2>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <i class="fa-solid fa-shirt"></i>
-            <span>Camisetas</span>
-            <div class="center">
-              <p>Ligeras, transpirables, secado rápido...</p>
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <i class="fa-solid fa-socks"></i>
+              <span>Calzado</span>
+              <div class="center">
+                <p>Tenis y zapatillas...</p>
+              </div>
               <button class="btn-solid btn-styled theme-primary">Ver</button>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ff0000" viewBox="0 0 24 24">
-              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-              <path d="M20 2H4c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h5c.43 0 .81-.28.95-.68L12 15.17l2.05 6.15A1 
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <i class="fa-solid fa-shirt"></i>
+              <span>Camisetas</span>
+              <div class="center">
+                <p>Ligeras, transpirables, secado rápido...</p>
+                <button class="btn-solid btn-styled theme-primary">Ver</button>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="#ff0000"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M20 2H4c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h5c.43 0 .81-.28.95-.68L12 15.17l2.05 6.15A1 
                   1 0 0 0 15 22h5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1M5 4h14v2H5zm14 4v2.34C17.88 10 17 9.12 16.66 8zM7.34 
                   8C7 9.12 6.12 10 5 10.34V8zm8.38 12-2.77-8.32c-.14-.41-.52-.68-.95-.68s-.81.28-.95.68L8.28 20H5v-7.6A5.5
-                  5.5 0 0 0 9.4 8h5.19a5.5 5.5 0 0 0 4.4 4.4V20h-3.28Z"></path>
-            </svg>
-            <span>Pantalones</span>
-            <div class="center">
-              <p>Licras, sudaderas, Pantalonetas...</p>
+                  5.5 0 0 0 9.4 8h5.19a5.5 5.5 0 0 0 4.4 4.4V20h-3.28Z"
+                ></path>
+              </svg>
+              <span>Pantalones</span>
+              <div class="center">
+                <p>Licras, sudaderas, Pantalonetas...</p>
+                <button class="btn-solid btn-styled theme-primary">Ver</button>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <i class="bi bi-watch" aria-hidden="true" id="accesorio"></i>
+              <span>Accesorios</span>
+              <div class="center">
+                <p>Gorras, relojes, medias...</p>
+              </div>
               <button class="btn-solid btn-styled theme-primary">Ver</button>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <i class="bi bi-dribbble" aria-hidden="true"></i>
+              <span>Equipamiento</span>
+              <div class="center">
+                <p>Balones, pesas, artículos deportivos...</p>
+                <button class="btn-solid btn-styled theme-primary">Ver</button>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card categoria-ofertas">
+              <i class="bi bi-percent" aria-hidden="true"></i>
+              <span>Ofertas</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin seccion de Categorias -->
+
+    <!-- RF 4 Catalogo de Productos -- INICIO -->
+    <article>
+      <div class="container-fluid">
+        <h2 class="fw-bold">PRODUCTOS DESTACADOS</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img src="./imagen/guayos.webp" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tenis Golty para Fútbol Sala</h5>
+                <p>Categoria: Calzado</p>
+                <h5 class="card-title">
+                  $120.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    20% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Calzado deportivo azul con detalles rosados
+                  y suela de goma para máximo agarre en superficies lisas.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-nuevo">Nuevo</span>
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal1"
+                      tabindex="-1"
+                      aria-labelledby="modal1Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/guayos2.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Tenis Golty para Fútbol Sala</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Calzado especializado para fútbol sala con
+                              capellada sintética de alta resistencia que
+                              garantiza durabilidad y flexibilidad. Cuenta con
+                              costuras reforzadas en la zona de impacto y una
+                              suela de goma non-marking (que no deja marcas)
+                              diseñada para proporcionar una tracción
+                              excepcional y evitar resbalones en superficies
+                              lisas de coliseo.
+                            </h6>
+                            <br />
+                            <h3>$120.000</h3>
+                            <h6>Tallas disponibles: 37, 38, 39, 40, 41, 42</h6>
+                            <h6>
+                              Colores disponibles: Azul marino con detalles en
+                              rosado
+                            </h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <i class="bi bi-watch" aria-hidden="true" id="accesorio"></i>
-            <span>Accesorios</span>
-            <div class="center">
-              <p>Gorras, relojes, medias...</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img src="./imagen/guayos2.webp" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Guayos FX para Césped Artificial</h5>
+                <p>Categoria: Calzado</p>
+                <h5 class="card-title">
+                  $110.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    12% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Botines blancos y grises con detalles
+                  naranjas y suela de multitacos para tracción en canchas
+                  sintéticas.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-destacado"
+                      >Destacado</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal2"
+                      tabindex="-1"
+                      aria-labelledby="modal2Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/guayos2.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Guayos FX para Césped Artificial</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Botines de fútbol diseñados específicamente para
+                              optimizar el rendimiento en canchas de césped
+                              sintético. Incorporan una suela de multitacos de
+                              goma que distribuye uniformemente la presión de la
+                              pisada. El empeine texturizado mejora la fricción
+                              para un control superior del balón, mientras que
+                              su interior acolchado reduce la fatiga durante el
+                              partido.
+                            </h6>
+                            <br />
+                            <h3>$110.000</h3>
+                            <h6>Tallas disponibles: 38, 39, 40, 41, 42, 43</h6>
+                            <h6>
+                              Colores disponibles: Blanco con paneles grises y
+                              acentos naranjas
+                            </h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn-solid btn-styled theme-primary">Ver</button>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <i class="bi bi-dribbble" aria-hidden="true"></i>
-            <span>Equipamiento</span>
-            <div class="center">
-              <p>Balones, pesas, artículos deportivos...</p>
-              <button class="btn-solid btn-styled theme-primary">Ver</button>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img src="./imagen/camisa.webp" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Camiseta Térmica Manga Larga Negra</h5>
+                <p>Categoria: Camisetas</p>
+                <h5 class="card-title">
+                  $55.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    22% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Prenda ajustada de manga larga para
+                  mantener la temperatura en rutinas al aire libre.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-pocasUnidades"
+                      >Pocas Unidades</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal3"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal3"
+                      tabindex="-1"
+                      aria-labelledby="modal3Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/camisa.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Camiseta Térmica Manga Larga Negra</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Prenda técnica de primera capa diseñada para
+                              entrenamientos en condiciones de baja temperatura.
+                              Fabricada con un tejido inteligente de poliéster y
+                              elastano que retiene el calor corporal mientras
+                              expulsa activamente la humedad hacia el exterior.
+                              Su diseño de compresión moderada y costuras planas
+                              evitan rozaduras y mejoran el soporte muscular.
+                            </h6>
+                            <br />
+                            <h3>$55.000</h3>
+                            <h6>Tallas disponibles: S, M, L, XL</h6>
+                            <h6>Colores disponibles: Negro sólido</h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img src="./imagen/camisa2.webp" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Camiseta de Compresión Deportiva Roja
+                </h5>
+                <p>Categoria: Camisetas</p>
+                <h5 class="card-title">
+                  $45.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    62% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Camiseta ajustada de secado rápido, ideal
+                  para entrenamientos intensos y running.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-oferta"
+                      >Oferta</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal4"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal4"
+                      tabindex="-1"
+                      aria-labelledby="modal4Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/camisa2.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Camiseta de Compresión Deportiva Roja</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Camiseta de alto rendimiento con ajuste ceñido que
+                              se adapta a la ergonomía del torso. Su tejido de
+                              secado ultrarrápido y sus paneles de ventilación
+                              estratégica ayudan a regular la temperatura
+                              corporal durante rutinas de alta intensidad. La
+                              compresión aplicada reduce la vibración muscular,
+                              acelerando la recuperación post-entrenamiento.
+                            </h6>
+                            <br />
+                            <h3>$45.000</h3>
+                            <h6>Tallas disponibles: XS, S, M, L</h6>
+                            <h6>
+                              Colores disponibles: Rojo vibrante con costuras
+                              negras
+                            </h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="./imagen/pantalones.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Pantalón Sudadera Adidas Negro</h5>
+                <p>Categoria: Pantalones</p>
+                <h5 class="card-title">
+                  $145.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    15% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Pantalón de entrenamiento cómodo y
+                  transpirable, con el logo clásico estampado en la pierna.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-nuevo">Nuevo</span>
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal5"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal5"
+                      tabindex="-1"
+                      aria-labelledby="modal5Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/pantalones.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Pantalón Sudadera Adidas Negro</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Pantalón deportivo de corte clásico cónico que
+                              combina comodidad y estilo. Confeccionado en una
+                              mezcla de algodón transpirable y felpa francesa,
+                              ofrece una textura suave al contacto con la piel.
+                              Incorpora una cintura elástica con cordón de
+                              ajuste personalizado, bolsillos laterales
+                              profundos y el icónico logotipo de la marca
+                              estampado en la pierna izquierda.
+                            </h6>
+                            <br />
+                            <h3>$145.000</h3>
+                            <h6>Tallas disponibles: S, M, L, XL, XXL</h6>
+                            <h6>
+                              Colores disponibles: Negro con logo y letras en
+                              blanco
+                            </h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="./imagen/accesorio.webp "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tula Deportiva Impermeable Morada</h5>
+                <p>Categoria: Accesorios</p>
+                <h5 class="card-title">
+                  $35.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    50% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Mochila ligera con cordones y
+                  compartimentos de malla laterales para el gimnasio.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-pocasUnidades"
+                      >Pocas Unidades</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal6"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal6"
+                      tabindex="-1"
+                      aria-labelledby="modal6Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/accesorio.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Tula Deportiva Impermeable Morada</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Mochila ligera y funcional, ideal para transportar
+                              ropa deportiva y elementos de aseo. Fabricada en
+                              lona de nylon de alta densidad con revestimiento
+                              impermeable para proteger tus pertenencias. Cuenta
+                              con un sistema de cierre de cordones gruesos que
+                              funcionan como tirantes, bolsillos laterales de
+                              malla para hidratación y franjas reflectantes
+                              frontales para seguridad nocturna.
+                            </h6>
+                            <br />
+                            <h3>$35.000</h3>
+                            <h6>
+                              Tallas disponibles: Talla única (Capacidad 15
+                              Litros)
+                            </h6>
+                            <h6>Colores disponibles: Morado oscuro</h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="./imagen/equipamento.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Par de Mancuernas de Neopreno (5 lbs)
+                </h5>
+                <p>Categoria: Equipamiento</p>
+                <h5 class="card-title">
+                  $60.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    70% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Mancuernas azules con recubrimiento
+                  antideslizante para ejercicios de tonificación en casa.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-oferta"
+                      >Oferta</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal7"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal7"
+                      tabindex="-1"
+                      aria-labelledby="modal7Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/equipamento.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Par de Mancuernas de Neopreno (5 lbs)</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Set compuesto por dos mancuernas de peso fijo (5
+                              libras / 2.27 kg cada una) con núcleo de hierro
+                              fundido sólido para un equilibrio perfecto. Su
+                              recubrimiento integral de neopreno texturizado
+                              protege los suelos contra impactos, reduce el
+                              ruido al apoyarlas y garantiza un agarre seguro y
+                              antideslizante, incluso con las manos sudadas.
+                            </h6>
+                            <br />
+                            <h3>$60.000</h3>
+                            <h6>Tallas disponibles: Peso único (5 lbs)</h6>
+                            <h6>Colores disponibles: Azul rey</h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="./imagen/equipamento2.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Balón de Fútbol Multicolor</h5>
+                <p>Categoria: Equipamiento</p>
+                <h5 class="card-title">
+                  $85.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    32% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Descripcion corta: Balón con diseño estampado de alto
+                  contraste, resistente y perfecto para partidos recreativos.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    Estado del Producto:
+                    <span class="badge theme-primary-estado-nuevo">Nuevo</span>
+                  </p>
+                  <div class="d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal8"
+                    >
+                      Ver Detalles
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="modal8"
+                      tabindex="-1"
+                      aria-labelledby="modal8Label"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <img
+                              src="./imagen/equipamento2.webp"
+                              class="d-flex w-100"
+                            />
+                          </div>
+                          <div class="modal-body">
+                            <h1>Balón de Fútbol Multicolor</h1>
+                            <h6 class="fw-normal">
+                              Descripcion: <br /><br />
+                              Balón de fútbol de tamaño oficial con diseño
+                              geométrico de alto contraste que facilita el
+                              seguimiento visual durante el juego y giros en el
+                              aire. Sus paneles están cosidos a máquina para
+                              garantizar una retención de forma duradera, y
+                              cuenta con una cámara interior de butilo que
+                              minimiza la pérdida de aire, ideal para
+                              entrenamientos diarios o partidos recreativos.
+                            </h6>
+                            <br />
+                            <h3>$85.000</h3>
+                            <h6>Tallas disponibles: Talla 5</h6>
+                            <h6>
+                              Colores disponibles: Blanco base con gráficos en
+                              azul, rojo y verde
+                            </h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              Añadir al carrito
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-sm"
+                      >Añadir al carrito</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card categoria-ofertas">
-            <i class="bi bi-percent" aria-hidden="true"></i>
-            <span>Ofertas</span>
-          </a>
+      </div>
+    </article>
+    <!-- RF 4 Catalogo de Productos -- FIN -->
+    <article>
+      <div class="container-fluid">
+        <h2 class="fw-bold">PRODUCTOS EN PROMOCION</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="./imagen/promocion.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Guayos + Medias + Balon</h5>
+                <p>Categoria: Calzado, Equipamiento</p>
+                <h5 class="promo">$<del>300.000</del></h5>
+                <h5 class="card-title">
+                  $120.000
+                  <button type="button" class="btn btn-sm btn-outline-success">
+                    60% OFF
+                  </button>
+                </h5>
+                <p class="card-text">
+                  Guayos de futbol ceped junto con medias comodas y balon de
+                  alta calidad para que nunca faltes al partido.
+                </p>
+                <div class="mt-auto">
+                  <p>
+                    <span class="badge theme-primary-estado-imperdible"
+                      >IMPERDIBLE</span
+                    >
+                  </p>
+                  <div class="d-flex gap-2 justify-left">
+                    <a href="" class="botonComprar">Comprar ya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </article>
+    <section class="categorias-section py-5" id="categorias">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="categorias-eyebrow mb-1">POR QUE COMPRAR EN SPORTZONE</p>
+          <h2 class="fw-bold mb-0">nuestros beneficios</h2>
+        </div>
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M19.1 7.8c-.38-.5-.97-.8-1.6-.8H15V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2 0 1.65 1.35 3 3 3s3-1.35 3-3h4c0 1.65 1.35 3 3 3s3-1.35 3-3c1.1 0 2-.9 2-2v-3.67c0-.43-.14-.86-.4-1.2zM17.5 9l1.5 2h-4V9zM7 19a1.003 1.003 0 0 1-.87-1.5c.37-.63 1.36-.63 1.73 0 .09.15.13.32.13.49 0 .55-.45 1-1 1Zm2.23-3s-.05-.05-.08-.07c-.06-.06-.12-.11-.17-.16-.12-.11-.25-.21-.38-.29a3 3 0 0 0-.67-.32c-.07-.02-.14-.05-.21-.07Q7.375 15 7 15c-.375 0-.49.04-.72.09-.07.02-.14.05-.21.07-.16.05-.31.11-.45.19-.07.04-.15.08-.22.13-.13.09-.26.18-.38.29-.06.05-.12.1-.18.16-.02.03-.05.04-.08.07h-.77V6h9v10H9.22ZM17 19a1.003 1.003 0 0 1-.87-1.5c.37-.63 1.36-.63 1.73 0 .09.15.13.32.13.49 0 .55-.45 1-1 1Zm3-3h-.77s-.05-.05-.08-.07c-.06-.06-.12-.11-.17-.16-.12-.11-.25-.21-.38-.29a3 3 0 0 0-.67-.32c-.07-.02-.14-.05-.21-.07Q17.375 15 17 15c-.375 0-.47.04-.7.09-.06.01-.12.03-.18.05-.18.06-.36.13-.52.22l-.12.06c-.17.1-.33.21-.48.35v-2.76h5v3Z"
+                ></path>
+              </svg>
+              <span>Envíos a Todo el País</span>
+              <div class="center">
+                <p>
+                  Consulta nuestras condiciones de entrega rápidas y seguras.
+                  Despachamos tu pedido para que disfrutes tu compra lo antes
+                  posible.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="m20.42 6.11-7.97-4c-.28-.14-.62-.14-.9 0l-7.97 4c-.31.15-.51.45-.55.79-.01.11-.96 10.76 8.55 15.01a.98.98 0 0 0 .82 0C21.91 17.66 20.97 7 20.95 6.9a.98.98 0 0 0-.55-.79ZM12 19.9C5.26 16.63 4.94 9.64 5 7.64l7-3.51 7 3.51c.04 1.99-.33 9.02-7 12.26"
+                ></path>
+                <path
+                  d="m11 12.59-1.29-1.3-1.42 1.42 2.71 2.7 4.71-4.7-1.42-1.42z"
+                ></path>
+              </svg>
+              <span>Compra 100% Segura</span>
+              <div class="center">
+                <p>
+                  Presentamos información relacionada con seguridad para el
+                  cliente. Protegemos tus datos y transacciones con la mejor
+                  tecnología para evitar malos ratos.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10"
+                ></path>
+              </svg>
+              <span>Atención al Cliente</span>
+              <div class="center">
+                <p>
+                  Mostrar los canales disponibles. Comunícate por WhatsApp,
+                  correo o teléfono. Soporte rápido y personalizado para tu
+                  comodidad.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a class="categoria-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="56"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="M16 16H2v2h14v4l6-5-6-5zM8 1 2 6l6 5V7h14V5H8z"></path>
+              </svg>
+              <span>Cambios Sencillos</span>
+              <div class="center">
+                <p>
+                  Presentar información general sobre cambios de productos. Si
+                  no es tu talla o cambias de opinión, te lo solucionamos fácil
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <div class="container my-5">
+      <div class="card shadow-sm p-4">
+        <h3 class="card-title fw-bold mb-3">Formulario de Solicitud de Información</h3>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="tel" class="form-control" id="telefono" required />
+            </div>
+
+            <div class="col-md-6">
+              <label for="producto" class="form-label"
+                >Producto de interes</label
+              >
+              <select class="form-select" id="producto" required>
+                <option selected disabled value="">
+                  Selecciona un producto...
+                </option>
+                <option value="1">Tenis Golty para Fútbol Sala</option>
+                <option value="2">Guayos FX para Césped Artificial</option>
+                <option value="3">Camiseta Térmica Manga Larga Negra</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="categoria" class="form-label">Categoria</label>
+              <select class="form-select" id="categoria">
+                <option selected disabled value="">
+                  Selecciona una categoria...
+                </option>
+                <option value="calzado">Calzado</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="equipamiento">Equipamiento</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="talla" class="form-label">Talla</label>
+              <select class="form-select" id="talla">
+                <option selected disabled value="">
+                  Selecciona la talla..
+                </option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                rows="3"
+                placeholder="Escribe la consulta aqui..."
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="mb-3">
+            <label class="form-label d-block fw-semibold"
+              >Medio por el cual prefiere ser contactado:</label
+            >
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="contactoCorreo"
+                value="correo"
+              />
+              <label class="form-check-label" for="contactoCorreo"
+                >Correo electrónico</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="contactoTelefono"
+                value="telefono"
+              />
+              <label class="form-check-label" for="contactoTelefono"
+                >Teléfono</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="contactoWhatsapp"
+                value="whatsapp"
+              />
+              <label class="form-check-label" for="contactoWhatsapp"
+                >WhatsApp</label
+              >
+            </div>
+          </div>
+
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="tratamientoDatos"
+              required
+            />
+            <label class="form-check-label" for="tratamientoDatos">
+              Acepto el tratamiento de datos personales y los términos
+              correspondientes.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-danger">Enviar</button>
+        </form>
       </div>
     </div>
-  </section>
-  <!-- Fin seccion de Categorias -->
+    <!-- Fin Formulario -->
 
-  <!-- RF 4 Catalogo de Productos -- INICIO -->
-  <article>
-    <div class="container-fluid">
-      <h2 class="fw-bold">PRODUCTOS DESTACADOS</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/guayos.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Tenis Golty para Fútbol Sala</h5>
-              <p>Categoria: Calzado</p>
-              <h5 class="card-title">
-                $120.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  20% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Calzado deportivo azul con detalles rosados
-                y suela de goma para máximo agarre en superficies lisas.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-nuevo">Nuevo</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/guayos2.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Tenis Golty para Fútbol Sala</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Calzado especializado para fútbol sala con
-                            capellada sintética de alta resistencia que
-                            garantiza durabilidad y flexibilidad. Cuenta con
-                            costuras reforzadas en la zona de impacto y una
-                            suela de goma non-marking (que no deja marcas)
-                            diseñada para proporcionar una tracción
-                            excepcional y evitar resbalones en superficies
-                            lisas de coliseo.
-                          </h6>
-                          <br />
-                          <h3>$120.000</h3>
-                          <h6>Tallas disponibles: 37, 38, 39, 40, 41, 42</h6>
-                          <h6>
-                            Colores disponibles: Azul marino con detalles en
-                            rosado
-                          </h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/guayos2.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Guayos FX para Césped Artificial</h5>
-              <p>Categoria: Calzado</p>
-              <h5 class="card-title">
-                $110.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  12% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Botines blancos y grises con detalles
-                naranjas y suela de multitacos para tracción en canchas
-                sintéticas.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-destacado">Destacado</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/guayos2.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Guayos FX para Césped Artificial</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Botines de fútbol diseñados específicamente para
-                            optimizar el rendimiento en canchas de césped
-                            sintético. Incorporan una suela de multitacos de
-                            goma que distribuye uniformemente la presión de la
-                            pisada. El empeine texturizado mejora la fricción
-                            para un control superior del balón, mientras que
-                            su interior acolchado reduce la fatiga durante el
-                            partido.
-                          </h6>
-                          <br />
-                          <h3>$110.000</h3>
-                          <h6>Tallas disponibles: 38, 39, 40, 41, 42, 43</h6>
-                          <h6>
-                            Colores disponibles: Blanco con paneles grises y
-                            acentos naranjas
-                          </h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/camisa.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Camiseta Térmica Manga Larga Negra</h5>
-              <p>Categoria: Camisetas</p>
-              <h5 class="card-title">
-                $55.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  22% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Prenda ajustada de manga larga para
-                mantener la temperatura en rutinas al aire libre.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-pocasUnidades">Pocas Unidades</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/camisa.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Camiseta Térmica Manga Larga Negra</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Prenda técnica de primera capa diseñada para
-                            entrenamientos en condiciones de baja temperatura.
-                            Fabricada con un tejido inteligente de poliéster y
-                            elastano que retiene el calor corporal mientras
-                            expulsa activamente la humedad hacia el exterior.
-                            Su diseño de compresión moderada y costuras planas
-                            evitan rozaduras y mejoran el soporte muscular.
-                          </h6>
-                          <br />
-                          <h3>$55.000</h3>
-                          <h6>Tallas disponibles: S, M, L, XL</h6>
-                          <h6>Colores disponibles: Negro sólido</h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/camisa2.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">
-                Camiseta de Compresión Deportiva Roja
-              </h5>
-              <p>Categoria: Camisetas</p>
-              <h5 class="card-title">
-                $45.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  62% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Camiseta ajustada de secado rápido, ideal
-                para entrenamientos intensos y running.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-oferta">Oferta</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal4">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/camisa2.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Camiseta de Compresión Deportiva Roja</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Camiseta de alto rendimiento con ajuste ceñido que
-                            se adapta a la ergonomía del torso. Su tejido de
-                            secado ultrarrápido y sus paneles de ventilación
-                            estratégica ayudan a regular la temperatura
-                            corporal durante rutinas de alta intensidad. La
-                            compresión aplicada reduce la vibración muscular,
-                            acelerando la recuperación post-entrenamiento.
-                          </h6>
-                          <br />
-                          <h3>$45.000</h3>
-                          <h6>Tallas disponibles: XS, S, M, L</h6>
-                          <h6>
-                            Colores disponibles: Rojo vibrante con costuras
-                            negras
-                          </h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/pantalones.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Pantalón Sudadera Adidas Negro</h5>
-              <p>Categoria: Pantalones</p>
-              <h5 class="card-title">
-                $145.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  15% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Pantalón de entrenamiento cómodo y
-                transpirable, con el logo clásico estampado en la pierna.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-nuevo">Nuevo</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal5">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/pantalones.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Pantalón Sudadera Adidas Negro</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Pantalón deportivo de corte clásico cónico que
-                            combina comodidad y estilo. Confeccionado en una
-                            mezcla de algodón transpirable y felpa francesa,
-                            ofrece una textura suave al contacto con la piel.
-                            Incorpora una cintura elástica con cordón de
-                            ajuste personalizado, bolsillos laterales
-                            profundos y el icónico logotipo de la marca
-                            estampado en la pierna izquierda.
-                          </h6>
-                          <br />
-                          <h3>$145.000</h3>
-                          <h6>Tallas disponibles: S, M, L, XL, XXL</h6>
-                          <h6>
-                            Colores disponibles: Negro con logo y letras en
-                            blanco
-                          </h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/accesorio.webp " class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Tula Deportiva Impermeable Morada</h5>
-              <p>Categoria: Accesorios</p>
-              <h5 class="card-title">
-                $35.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  50% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Mochila ligera con cordones y
-                compartimentos de malla laterales para el gimnasio.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-pocasUnidades">Pocas Unidades</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal6">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/accesorio.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Tula Deportiva Impermeable Morada</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Mochila ligera y funcional, ideal para transportar
-                            ropa deportiva y elementos de aseo. Fabricada en
-                            lona de nylon de alta densidad con revestimiento
-                            impermeable para proteger tus pertenencias. Cuenta
-                            con un sistema de cierre de cordones gruesos que
-                            funcionan como tirantes, bolsillos laterales de
-                            malla para hidratación y franjas reflectantes
-                            frontales para seguridad nocturna.
-                          </h6>
-                          <br />
-                          <h3>$35.000</h3>
-                          <h6>
-                            Tallas disponibles: Talla única (Capacidad 15
-                            Litros)
-                          </h6>
-                          <h6>Colores disponibles: Morado oscuro</h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/equipamento.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">
-                Par de Mancuernas de Neopreno (5 lbs)
-              </h5>
-              <p>Categoria: Equipamiento</p>
-              <h5 class="card-title">
-                $60.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  70% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Mancuernas azules con recubrimiento
-                antideslizante para ejercicios de tonificación en casa.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-oferta">Oferta</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal7">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/equipamento.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Par de Mancuernas de Neopreno (5 lbs)</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Set compuesto por dos mancuernas de peso fijo (5
-                            libras / 2.27 kg cada una) con núcleo de hierro
-                            fundido sólido para un equilibrio perfecto. Su
-                            recubrimiento integral de neopreno texturizado
-                            protege los suelos contra impactos, reduce el
-                            ruido al apoyarlas y garantiza un agarre seguro y
-                            antideslizante, incluso con las manos sudadas.
-                          </h6>
-                          <br />
-                          <h3>$60.000</h3>
-                          <h6>Tallas disponibles: Peso único (5 lbs)</h6>
-                          <h6>Colores disponibles: Azul rey</h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/equipamento2.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Balón de Fútbol Multicolor</h5>
-              <p>Categoria: Equipamiento</p>
-              <h5 class="card-title">
-                $85.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  32% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Descripcion corta: Balón con diseño estampado de alto
-                contraste, resistente y perfecto para partidos recreativos.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  Estado del Producto:
-                  <span class="badge theme-primary-estado-nuevo">Nuevo</span>
-                </p>
-                <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal8">
-                    Ver Detalles
-                  </button>
-                  <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./imagen/equipamento2.webp" class="d-flex w-100" />
-                        </div>
-                        <div class="modal-body">
-                          <h1>Balón de Fútbol Multicolor</h1>
-                          <h6 class="fw-normal">
-                            Descripcion: <br /><br />
-                            Balón de fútbol de tamaño oficial con diseño
-                            geométrico de alto contraste que facilita el
-                            seguimiento visual durante el juego y giros en el
-                            aire. Sus paneles están cosidos a máquina para
-                            garantizar una retención de forma duradera, y
-                            cuenta con una cámara interior de butilo que
-                            minimiza la pérdida de aire, ideal para
-                            entrenamientos diarios o partidos recreativos.
-                          </h6>
-                          <br />
-                          <h3>$85.000</h3>
-                          <h6>Tallas disponibles: Talla 5</h6>
-                          <h6>
-                            Colores disponibles: Blanco base con gráficos en
-                            azul, rojo y verde
-                          </h6>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-danger">
-                            Añadir al carrito
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="btn btn-danger btn-sm">Añadir al carrito</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-  <!-- RF 4 Catalogo de Productos -- FIN -->
-  <article>
-    <div class="container-fluid">
-      <h2 class="fw-bold">PRODUCTOS EN PROMOCION</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card h-100" style="width: 100%">
-            <img src="./imagen/promocion.webp" class="card-img-top" alt="..." />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Guayos + Medias + Balon</h5>
-              <p>Categoria: Calzado, Equipamiento</p>
-              <h5 class="promo">$<del>300.000</del></h5>
-              <h5 class="card-title">
-                $120.000
-                <button type="button" class="btn btn-sm btn-outline-success">
-                  60% OFF
-                </button>
-              </h5>
-              <p class="card-text">
-                Guayos de futbol ceped junto con medias comodas y balon de
-                alta calidad para que nunca faltes al partido.
-              </p>
-              <div class="mt-auto">
-                <p>
-                  <span class="badge theme-primary-estado-imperdible">IMPERDIBLE</span>
-                </p>
-                <div class="d-flex gap-2 justify-left">
-                  <a href="" class="botonComprar">Comprar ya</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-  <section class="categorias-section py-5" id="categorias">
-    <div class="container">
-      <div class="text-center mb-4">
-        <p class="categorias-eyebrow mb-1">POR QUE COMPRAR EN SPORTZONE</p>
-        <h2 class="fw-bold mb-0">nuestros beneficios</h2>
-      </div>
-      <div class="row g-3 justify-content-center">
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 24 24">
-              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-              <path
-                d="M19.1 7.8c-.38-.5-.97-.8-1.6-.8H15V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2 0 1.65 1.35 3 3 3s3-1.35 3-3h4c0 1.65 1.35 3 3 3s3-1.35 3-3c1.1 0 2-.9 2-2v-3.67c0-.43-.14-.86-.4-1.2zM17.5 9l1.5 2h-4V9zM7 19a1.003 1.003 0 0 1-.87-1.5c.37-.63 1.36-.63 1.73 0 .09.15.13.32.13.49 0 .55-.45 1-1 1Zm2.23-3s-.05-.05-.08-.07c-.06-.06-.12-.11-.17-.16-.12-.11-.25-.21-.38-.29a3 3 0 0 0-.67-.32c-.07-.02-.14-.05-.21-.07Q7.375 15 7 15c-.375 0-.49.04-.72.09-.07.02-.14.05-.21.07-.16.05-.31.11-.45.19-.07.04-.15.08-.22.13-.13.09-.26.18-.38.29-.06.05-.12.1-.18.16-.02.03-.05.04-.08.07h-.77V6h9v10H9.22ZM17 19a1.003 1.003 0 0 1-.87-1.5c.37-.63 1.36-.63 1.73 0 .09.15.13.32.13.49 0 .55-.45 1-1 1Zm3-3h-.77s-.05-.05-.08-.07c-.06-.06-.12-.11-.17-.16-.12-.11-.25-.21-.38-.29a3 3 0 0 0-.67-.32c-.07-.02-.14-.05-.21-.07Q17.375 15 17 15c-.375 0-.47.04-.7.09-.06.01-.12.03-.18.05-.18.06-.36.13-.52.22l-.12.06c-.17.1-.33.21-.48.35v-2.76h5v3Z">
-              </path>
-            </svg>
-            <span>Envíos a Todo el País</span>
-            <div class="center">
-              <p>
-                Consulta nuestras condiciones de entrega rápidas y seguras.
-                Despachamos tu pedido para que disfrutes tu compra lo antes
-                posible.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 24 24">
-              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-              <path
-                d="m20.42 6.11-7.97-4c-.28-.14-.62-.14-.9 0l-7.97 4c-.31.15-.51.45-.55.79-.01.11-.96 10.76 8.55 15.01a.98.98 0 0 0 .82 0C21.91 17.66 20.97 7 20.95 6.9a.98.98 0 0 0-.55-.79ZM12 19.9C5.26 16.63 4.94 9.64 5 7.64l7-3.51 7 3.51c.04 1.99-.33 9.02-7 12.26">
-              </path>
-              <path d="m11 12.59-1.29-1.3-1.42 1.42 2.71 2.7 4.71-4.7-1.42-1.42z"></path>
-            </svg>
-            <span>Compra 100% Segura</span>
-            <div class="center">
-              <p>Presentamos información relacionada con seguridad para el cliente.
-                Protegemos tus datos y transacciones con la mejor tecnología para evitar malos ratos.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 24 24">
-              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-              <path
-                d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10">
-              </path>
-            </svg>
-            <span>Atención al Cliente</span>
-            <div class="center">
-              <p>Mostrar los canales disponibles. Comunícate por WhatsApp, correo o teléfono. Soporte rápido y
-                personalizado para tu comodidad.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a class="categoria-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="56" fill="currentColor" viewBox="0 0 24 24">
-              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-              <path d="M16 16H2v2h14v4l6-5-6-5zM8 1 2 6l6 5V7h14V5H8z"></path>
-            </svg>
-            <span>Cambios Sencillos</span>
-            <div class="center">
-              <p>Presentar información general sobre cambios de productos. Si no es tu talla o cambias de opinión, te lo
-                solucionamos fácil</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
